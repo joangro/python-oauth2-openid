@@ -6,7 +6,7 @@ env_variables:
   CLIENT_ID: 'OAuth Client ID'
   CLIENT_SECRET: 'OAuth Client Secret'
   REDIRECT_URI: 'Authorized redirect URL for authentication flow. (The base URI needs to be withelisted.) I.E "https://my-authorized-uri/endpoint"'
-  PROJECT_ID: 'my-project-id'
+  PROJECT_ID: 'Application Project ID'
   APP_SECRET_ID: 'Flask application sercret ID. Put a random value here.'
 
 handlers:

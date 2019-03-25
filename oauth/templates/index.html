@@ -1,0 +1,34 @@
+{# This simple template derives from ``base.html``. See ``base.html`` for
+   more information about template inheritance. #}
+{%- extends "base.html" %}
+
+{# PLACEHOLDER
+{% import "bootstrap/fixes.html" as fixes %}
+{% import "bootstrap/utils.html" as util %}
+#}
+
+{# Inside the content block is where most the stuff goes #}
+{% block content %}
+  <div class"container-fluid">
+  <div class="text-center row pb-5">
+      <h3 class="title text-web">Welcome to my website</h3>
+  </div>
+  <div class="row text-center endpointsimage">
+    <img src="{{url_for('static', filename='endpoints.png')}}">
+  </div>
+  <div class="cover-container text-center p-100 row">
+    <main role="main" class="inner cover">
+      <h1 class="text-web">H1 placeholder</h1>
+      <p class="lead text-web">This is an example application. Click the following button to authenticate with OAuth:</p>
+      <div class="row text-center">
+        <a href="{{url_for('.openid')}}" class="btn btn-info btn-lg text-center" role="button">Authenticate with OAuth</a>
+      </div>
+    </main>
+  </div>
+  <div class="container-fluid row">
+  <footer class="page-footer row">
+    <div class="footerc footert text-center row">2019 - Joan Grau</div>
+  </footer>
+  </div>
+  </div>
+{%- endblock %}
